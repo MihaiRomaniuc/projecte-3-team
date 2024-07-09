@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lobby | FootballQuiz</title>
+        <link rel = "stylesheet" href = "../../css/lobby.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id = "title1">Esperando al anfitrión para comenzar la partida</h1>
+        <div class="loader"></div>
+        <br/>
+        <div class="form-field">
+            <label id="label">Elige un equipo</label>
+            <div id="team"></div>
+        </div>
+        <div class="form-field">
+            <button id="selectTeam">Seleccionar</button>
+        </div>
+    </body>
+    <script src = "../../socket.io/socket.io.js"></script>
+    <script src = "../../js/libs/jqueryLibrary.js"></script>
+    <script src = "../../js/libs/deparam.js"></script>
+    <script src = "../../js/lobby.js"></script>
+    
+</html>

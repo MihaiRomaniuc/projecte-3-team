@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anfitrión | FootballQuiz</title>
+        <link rel = "stylesheet" href = "../../css/host.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../css/quizCreator.css">
+    </head>
+    <body>
+        <br>
+        <h2 id = "title">Únete a esta Partida usando el pin: </h2>
+        <h1 id = "gamePinText"></h1>
+        <div class="players-container">
+            <h3>Lista de jugadores</h3>
+            <ul id="playersList" class="player-list" style="list-style-type: none; padding: 0;"></ul>
+        </div>
+        <br>
+        <div class="form-field button-container">
+            <button class="btn" id="cancel" onclick = "endGame()">Cancelar</button>
+            <button id = 'start' onclick = "startGame()">Empezar Partida</button>
+        </div>
+        <br>
+        <br>
+        <script src = "../../socket.io/socket.io.js"></script>
+        <script src = "../../js/libs/jqueryLibrary.js"></script>
+        <script src = "../../js/libs//deparam.js"></script>
+        <script src = "../../js/host.js"></script>
+    </body>
+</html>

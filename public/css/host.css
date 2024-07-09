@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('/media/25430.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#title {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+#gamePinText {
+    text-align: center;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 50px;
+    background-color: rgba(245, 245, 245, 0.3);
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.player-list {
+    width: 50%;
+    min-height: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    background-image: url('/media/53427.jpeg');
+}
+
+.players-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.player-name {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-size: cover;
+    font-weight: bold;
+}
+
+#start {
+    background-color: #3A3B3A;
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#start,
+#cancel {
+    width: 48%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(29, 65, 27);
+    color: white;
+    text-decoration: none;
+}
+
+#start {
+    margin-left: 4%;
+    background-color: rgb(45, 111, 40);
+}

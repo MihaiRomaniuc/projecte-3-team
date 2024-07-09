@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('/media/25430.jpg');
+    background-size: cover;
+    background-position: center; /* Centra la imagen en el cuerpo */
+    background-repeat: no-repeat;
+}
+#title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+#subtitle {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#createButton {
+    width: 25%;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    background-color: rgb(45, 111, 40);
+    text-align: center;
+    text-decoration: none;
+}
+#game-list {
+    text-align: center;
+}
+#gameButton {
+    color: white;
+    padding: 50px;
+    width: 900px;
+    font-size:80px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gameButton:hover{
+    cursor: pointer;
+}

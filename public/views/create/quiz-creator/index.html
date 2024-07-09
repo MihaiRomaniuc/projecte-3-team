@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Creador | FootballQuiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/quizCreator.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center" id="title">Crea tu Cuestionario</h1>
+
+        <div class="form-group">
+            <label for="name">Título del Cuestionario</label>
+            <input id="name" type="text" class="form-control" autofocus />
+        </div>
+
+        <div id="allQuestions">
+            <div id="question-field1" class="question-field">
+                <label>Pregunta 1:</label>
+                <input class="form-control" id="q1" type="text" autofocus />
+
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <label>Respuesta 1:</label>
+                        <input id="1a1" type="text" class="form-control" autofocus />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Respuesta 2:</label>
+                        <input id="1a2" type="text" class="form-control" autofocus />
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <label>Respuesta 3:</label>
+                        <input id="1a3" type="text" class="form-control" autofocus />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Respuesta 4:</label>
+                        <input id="1a4" type="text" class="form-control" autofocus />
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <label>Respuesta correcta (1-4):</label>
+                    <input class="form-control correct" id="correct1" type="number" autofocus />
+                </div>
+            </div>
+        </div>
+
+        <button class="btn" style="background-color: rgb(61, 169, 57); color: white;" onclick="addQuestion()">Añade otra pregunta</button>
+
+        <div class="mt-3">
+            <button class="btn" style="background-color: rgb(29, 65, 27); color: white;"  onclick="cancelQuiz()">Cancelar Cuestionario y volver</button>
+            <button class="btn" style="background-color: rgb(45, 111, 40); color: white;" onclick="updateDatabase()">Crear Cuestionario</button>
+        </div>
+    </br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../../../socket.io/socket.io.js"></script>
+    <script src="../../../js/quizCreator.js"></script>
+</body>
+
+</html>

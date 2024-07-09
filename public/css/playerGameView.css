@@ -1,0 +1,141 @@
+html,
+body {
+    background: black url('/media/25430.jpg') center no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    height: 200px;
+    font-size: 30px !important;
+}
+
+#answer1,
+#answer2,
+#answer3,
+#answer4 {
+    background-image: url('/media/25463.png');
+    background-size: cover;
+    color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px !important;
+}
+
+#buttons,
+#question,
+#timer,
+#message,
+#winner1,
+#winner2,
+#winner3,
+#winner4,
+#winner5,
+#winnerTitle {
+    text-align: center;
+    color: white;
+}
+
+#timer {
+    background-image: url('/media/cronometro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer span{
+    padding-top: 10px;
+}
+
+#winnerTitle{
+    margin-bottom: 30px;
+} 
+
+#winner1,
+#winner2,
+#winner3,
+#winner4,
+#winner5 { 
+    margin-bottom: 5px; 
+    font-size: 26px;
+}
+
+.teamImage {
+    width: 60px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+#winner1,
+#winner2,
+#winner3,
+#winner4,
+#winner5,
+#winnerTitle {
+    display: none;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Ajusta el espaciado según sea necesario */
+}
+
+#playerStats {
+    text-align: left;
+    width: 300px;
+    position: absolute;
+}
+
+#gameStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#nameText {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#scoreText{
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+}
+
+#question,
+#timer {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+#timer {
+    font-size: 25px;
+    margin-top: 70px;
+}
+
+#question {
+    margin: 10px;
+    font-size: 33px;
+}
+
+#teamImg{
+    width: 100px;
+    padding: 5px; 
+    margin-left: 20px;
+}

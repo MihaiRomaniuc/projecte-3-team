@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Juego | FootballQuiz</title>
+    <link rel="stylesheet" href="../../../css/playerGameView.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="playerStats">
+        <h4 id="nameText">Nombre: </h4>
+        <img id="teamImg"></img>
+        <h4 id="scoreText">Puntuación: </h4>
+    </div>
+    <div id="gameStats">
+        <div id="timer"><span id="num">20</span></div>
+        <h3 id="question">Pregunta: </h3>
+    </div>
+    <h2 id="message"></h2>
+    <div class="justify-content-center text-center">
+        <button class="col-md-5 mb-2" onclick="answerSubmitted(1)" id="answer1" class="button"></button>
+        <button class="col-md-5 mb-2" onclick="answerSubmitted(2)" id="answer2" class="button"></button>
+        <button class="col-md-5 mb-2" onclick="answerSubmitted(3)" id="answer3" class="button"></button>
+        <button class="col-md-5 mb-2" onclick="answerSubmitted(4)" id="answer4" class="button"></button>
+    </div>
+    <br>
+    <h2 id="winnerTitle">Top 5 Jugadores</h4>
+        <h3 id="winner1">1.</h3>
+        <h3 id="winner2">2.</h3>
+        <h3 id="winner3">3.</h3>
+        <h3 id="winner4">4.</h3>
+        <h3 id="winner5">5.</h3>
+
+        <script src="../../../socket.io/socket.io.js"></script>
+        <script src="../../../js/libs/jqueryLibrary.js"></script>
+        <script src="../../../js/libs/deparam.js"></script>
+        <script src="../../../js/playerGame.js"></script>
+</body>
+
+</html>

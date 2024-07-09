@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Juego | FootballQuiz</title>
+    <link rel="stylesheet" href="../../../css/hostGameView.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h4 id="questionNum">Pregunta 1 / x</h4>
+    <h4 id="playersAnswered">Jugadores que han contestado: 0 / x</h4>
+    <h3 id="timerText">Tiempo Restante:<span id="num"> 20</span></h3>
+
+    <div class="row justify-content-center text-center align-items-end" style="margin-right: 0;">
+        <div class="square" id="square1"></div>
+        <div class="square" id="square2"></div>
+        <div class="square" id="square3"></div>
+        <div class="square" id="square4"></div>
+    </div>
+
+    <h2 id="question">Pregunta</h2>
+    <div class="row justify-content-center text-center" style="margin-right: 0;">
+        <div class="col-md-4 mb-2" id="answer1">Respuesta</div>
+        <div class="col-md-4 mb-2" id="answer2">Respuesta</div>
+        <div class="col-md-4 mb-2" id="answer3">Respuesta</div>
+        <div class="col-md-4 mb-2" id="answer4">Respuesta</div>
+    </div>
+
+    <br>
+    <button onclick="nextQuestion()" id="nextQButton">Siguiente Pregunta</button>
+
+    <h2 id="winnerTitle">Top 5 Jugadores</h4>
+        <h3 id="winner1">1.</h3>
+        <h3 id="winner2">2.</h3>
+        <h3 id="winner3">3.</h3>
+        <h3 id="winner4">4.</h3>
+        <h3 id="winner5">5.</h3>
+
+        <script src="../../../socket.io/socket.io.js"></script>
+        <script src="../../../js/libs/jqueryLibrary.js"></script>
+        <script src="../../../js/libs/deparam.js"></script>
+        <script src="../../../js/hostGame.js"></script>
+</body>
+
+</html>
